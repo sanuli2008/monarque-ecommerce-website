@@ -1,0 +1,45 @@
+#full-body {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+#topic {
+    text-align: center; /* Center text inside the h2 */
+}
+
+/* Different category */
+.different-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.different-container a{
+    text-decoration: none;
+    color: #000;
+}
+.different {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.different img {
+    width: 100px; /* Adjust size */
+    height: 100px;
+    object-fit: cover;
+}
+
+.different p {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.different:hover {
+    transform: scale(1.1);
+}

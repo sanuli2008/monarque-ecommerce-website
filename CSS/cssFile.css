@@ -1,0 +1,758 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif,'Playfair Display', serif;
+    background-color: white;
+}
+
+
+
+
+
+.featured-text{
+  display: flex;
+  width:100%;
+  height: 40px;
+  font-size: 25px;
+  color: #000;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: solid black;
+}
+
+/*promotion banner*/
+#promotion{
+  display: flex;
+  height:40px;
+  margin-top: 70px;
+  width: auto;
+  font-size: 14px;
+  color: #1A1C20;
+  background-color: #f0ece3;
+  align-items: center;
+  
+}
+#text{
+  margin-left: 40%;
+}
+.promo-bar {
+    display:flex;
+    width: 100%;
+    height:500px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between image and text */
+    position: relative;
+    border: solid black;
+    margin-top: 70px;
+}
+.img-promo {
+    height: auto; /* Adjust size as needed */
+    width: 100%;
+    object-fit: contain; /* Ensure the image maintains its aspect ratio */
+}
+.promo-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    z-index: 2; /* Ensure it's above the image */
+}
+.promo-text:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    color: black;
+}
+  
+/* Slideshow container */
+.promotion-banner {
+  background-color: #f9f9f9; /* Light background for the banner */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto; /* Center the banner */
+  width: 100%; /* Adjust width as needed */
+  height: 580px;
+  margin-top: 70px;
+}
+.slideshow-container {
+  width: 100%;
+  height: 580px;
+  position: relative;
+  margin: auto;
+  
+}
+/* Slide Content */
+.slide-content {
+  display: flex;
+  align-items: center;
+  height: 580px; /* Adjust height as needed */
+  background-color: #2e2e2e;
+}
+/* Text Box (40% width) */
+.text-box {
+  width: 40%;
+  height:580px;
+  padding: 20px;
+  background-color:#2e2e2e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  text-align: center;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Stack content vertically */
+
+}
+
+.text-box h2 {
+  font-size: 2rem;
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+.text-box p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0 0 20px;
+}
+
+.text-box button {
+  padding: 10px 20px;
+  background-color: #ffffff; /* Button color */
+  color: rgb(0, 0, 0);
+  border: solid black;
+  font-size: 1rem;
+  transition: background-color 0.3s ease; /* Smooth button hover effect */
+}
+
+.text-box button:hover {
+  background-color: #747474;
+  color: #ffffff;
+
+}
+
+/* Slide Content */
+.second-content {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space out the elements */
+  height: 580px; /* Adjust height as needed */
+}
+
+/* Text Box (Middle) */
+.second-box {
+  width: 40%; /* Adjust width as needed */
+  height: 100%; /* Full height of the container */
+  padding: 20px;
+  background-color: #2e2e2e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center text horizontally */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Stack content vertically */
+}
+.second-box h2 {
+  font-size: 2rem;
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+.second-box p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0 0 20px;
+}
+
+.second-box button {
+  padding: 10px 20px;
+  background-color: #ffffff; /* Button color */
+  color: rgb(0, 0, 0);
+  border: solid black;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.second-box button:hover {
+  background-color: #747474;
+  color: #ffffff;
+}
+/* Image Container (Side Images) */
+/* Slide Content */
+/* Slide Content */
+.third-content {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space out the elements */
+  height: 580px; /* Adjust height as needed */
+  position: relative;
+  background-color: #ededed;
+}
+.third-content img{
+  display: block;
+  width: 100%;
+  height: 580px;
+  object-fit: cover;
+}
+.text-overlay {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 250px;
+  font-weight: 400;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Bodoni Moda', serif; /* Font applied only to this text */
+
+}
+
+.subtext {
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: lighter;
+}
+
+.subtext-right {
+  position: absolute;
+  top: 30%;
+  right: 42%;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: lighter;
+}
+
+/* On smaller screens, decrease text size */
+@media screen and (max-width: 1024px) {
+  .subtext{
+    top:10%;
+    font-size: 14px;
+  }
+  .subtext-right{
+    top: 30%;
+    font-size: 14px;
+  }
+  .text-overlay{
+    font-size: 100px;
+  }
+}
+/* Side Images */
+.third-image {
+  width: 30%; /* Adjust width as needed */
+  height: 100%; /* Full height of the container */
+  overflow: hidden;
+}
+
+/* Middle Image */
+.fourth-image {
+  width: 40%; /* Larger width for the middle image */
+  height: 100%; /* Full height of the container */
+  overflow: hidden;
+  position: relative; /* For positioning the text box */
+}
+
+/* Ensure images fill their containers */
+.third-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+/* Text Box (Inside Middle Image) */
+.third-box {
+  position: absolute;
+  bottom: 0; /* Stick to the bottom */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  padding: 20px;
+  background-color: rgba(180, 165, 143, 0.5); /* Transparent background */
+  text-align: center; /* Center text horizontally */
+}
+
+.third-box h2 {
+  font-size: 2rem;
+  margin: 0 0 10px;
+  /*color: #1e1e1e;
+}
+
+.third-box p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0 0 20px;
+}
+
+.third-box button {
+  padding: 10px 20px;
+  background-color: #ffffff; /* Button color */
+  color: rgb(0, 0, 0);
+  border: solid black;
+
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.third-box button:hover {
+  background-color: #6d4d28;
+}
+/* Image Container (Left and Right) */
+.image-container {
+  width: 30%; /* Adjust width as needed */
+  height: 100%; /* Full height of the container */
+  overflow: hidden;
+
+}
+
+
+/* Image Box (60% width) */
+.image-box {
+  width: 60%;
+  height: 100%;
+  display: flex; /* Arrange images side by side */
+  overflow: hidden;
+  align-items: flex-end; /* Align images at the bottom */
+}
+
+/* Image Container (33.33% width for each image) */
+.image-container {
+  flex: 1; /* Each image takes equal space */
+  overflow: hidden;
+  position: relative; /* For positioning captions (if needed) */
+}
+
+/* Side Images (Smaller Height) */
+.side-image {
+  height: 90%; /* Adjust height as needed */
+}
+
+/* Middle Image (Taller Height) */
+.middle-image {
+  height: 100%; /* Full height of the container */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%; /* Ensure images fill the container */
+  object-fit: cover; /* Crop images to fit the container */
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.banner{
+  width:100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+
+}
+
+.main-container{
+  display:flex;
+  flex-direction: row;
+  height:670px;
+  gap:10px;
+  margin-top: 10px;
+}
+.item{
+  display: flex;
+  flex:1;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensures the image doesn't overflow */
+  position: relative;
+}
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes the image fill the container */
+  position: relative;
+}
+.text-img{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  z-index: 2; /* Ensure it's above the image */
+}
+.text-img:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  color: black;
+}
+
+/* Slide Content */
+.third-content {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  height: 550px; 
+  width:100%;
+}
+
+/* Text Box (Left Side) */
+.text-green {
+  width: 40%;
+  height:550px;
+  padding: 20px;
+  background-color:#E4DDD4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  text-align: center;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Stack content vertically */
+}
+
+.text-green h2 {
+  font-size: 2rem;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.text-green p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0 0 20px;
+}
+
+.text-green button {
+  padding: 10px 20px;
+  background-color: #ffffff; /* Button color */
+  color: rgb(0, 0, 0);
+  border: solid black;
+
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.text-green button:hover {
+  background-color: #ccc0ae;
+}
+
+/* Image Grid (2x2) on Right Side */
+.image-grid {
+  width: 60%; /* Adjust width as needed */
+  height: 550px;
+  display: flex;
+  flex-direction: column; /* Stack rows vertically */
+  gap: 10px; /* Space between rows */
+}
+
+/* Image Row */
+.image-row {
+  display: flex;
+  gap: 10px; /* Space between images */
+  height: calc((550px - 10px) / 2); /* Half the height minus the gap */
+  width: 100%; /* Full width of the grid */
+}
+
+/* Image Container */
+.gree-grid {
+  flex: 1; /* Each image takes equal space */
+  overflow: hidden;
+  border-radius: 10px;
+  width:350px;
+}
+
+.green-grid img {
+  width: 420px;
+  height: 270px;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+#collection-container{
+  display: flex;
+  width: 100%;
+  height:660px;
+  gap: 10px;
+  justify-content: center;
+}
+
+#summer-container {
+  display: flex;
+  width: calc((100% - 40px)/ 3);
+  height: 660px;
+  margin-top: 20px;
+  position: relative; /* Required for absolute positioning of the text box */
+  overflow: hidden; /* Ensure images don't overflow */
+  justify-content: center; /* Center images horizontally */
+  align-items: center; /* Center images vertically */
+  background-color: #f0f0f0; /* Optional: Add a background color for debugging */
+  gap: 5px;
+}
+
+#summer-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+#vintage-container {
+  display: flex;
+  width: calc((100% - 40px)/ 3);
+  height: 660px;
+  margin-top: 20px;
+  position: relative; /* Required for absolute positioning of the text box */
+  overflow: hidden; /* Ensure images don't overflow */
+  justify-content: center; /* Center images horizontally */
+  align-items: center; /* Center images vertically */
+  background-color: #f0f0f0; /* Optional: Add a background color for debugging */
+  gap: 5px;
+}
+
+#vintage-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+#vintage-container,#winter-collection .collection-box{
+  color: #ffffff;
+}
+
+#winter-container {
+  display: flex;
+  width: calc((100% - 40px)/ 3);
+  height: 660px;
+  margin-top: 20px;
+  position: relative; /* Required for absolute positioning of the text box */
+  overflow: hidden; /* Ensure images don't overflow */
+  justify-content: center; /* Center images horizontally */
+  align-items: center; /* Center images vertically */
+  background-color: #f0f0f0; /* Optional: Add a background color for debugging */
+  gap: 5px;
+}
+
+#winter-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.collection-box {
+  position: absolute;
+  bottom: 0; /* Position at the bottom */
+  right: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  padding: 20px;
+  background-color: transparent; /* Semi-transparent black background */
+  color: rgb(0, 0, 0); /* Text color */
+  text-align: center; /* Center text */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  z-index: 1; /* Ensure text box is above images */
+}
+
+/* Hover Effect */
+.collection-box:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: #ffffff;
+}
+
+/* Text Box Content */
+.collection-box h3 {
+  font-size: 2rem;
+  margin: 0 0 10px;
+
+}
+
+.collection-box p {
+  font-size: 28px;
+  margin: 0 0 20px;
+
+}
+
+.collection-box button {
+  padding: 10px 20px;
+  background-color: #ffffff; /* Button color */
+  color: rgb(0, 0, 0);
+  border: solid black;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease; /* Smooth button hover effect */
+}
+
+.collection-box button:hover {
+  background-color: #969595; /* Darker button color on hover */
+}
+
+#exclusive-container{
+  display: flex;
+  width: 100%;
+  height: 550px;
+  position: relative;
+  margin: auto;
+
+  margin-top: 40px;
+}
+.exclusive-content{
+  display: flex;
+  align-items: center;
+  height: 550px; /* Adjust height as needed */
+}
+.exclusive-text{
+  width: 40%;
+  height:545px;
+  padding: 20px;
+  background-color:#2e2e2e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  text-align: center;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Stack content vertically */
+
+}
+
+.exclusive-text h2 {
+  font-size: 2rem;
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+.exclusive-text p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0 0 20px;
+}
+
+.exclusive-text button {
+  padding: 10px 20px;
+  background-color: #ffffff; /* Button color */
+  color: rgb(0, 0, 0);
+  border: solid black;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.exclusive-text button:hover {
+  background-color: #747474;
+  color: #ffffff;
+}
+.exclusive-box{
+  width: 60%;
+  height: 100%;
+  display: flex; /* Arrange images side by side */
+  overflow: hidden;
+  align-items: flex-end; /* Align images at the bottom */
+}
+.exclusive-img img{
+  width:500px;
+  height: 550px;
+  object-fit: cover;
+}
+.exclusive-second img{
+  width:410px;
+  height: 550px;
+  object-fit: cover;
+}
+
+#shop-more button{
+  width: 200px;
+  padding: 10px 20px;
+  background-color: #2c2c2c;
+  color: white;
+  margin-left: 700px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#shop-more button:hover{
+  background-color: #747474;
+  color: #000;
+}
+#shop-more a{
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .exclusive-img img{
+    width:calc(100%);
+  }
+  .exclusive-second img{
+    width: calc(100%);
+  }
+}
+
+

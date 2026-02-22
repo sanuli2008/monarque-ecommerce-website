@@ -1,0 +1,81 @@
+.cart-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between different wishlist-main sections */
+    width:100%;
+    margin-top: 70px;
+
+}
+
+.wishlist-main {
+    display: flex;
+    justify-content: center; /* Center the 4 products */
+    gap: 10px;
+    flex-wrap: nowrap; /* Keep exactly 4 items per row */
+    width:100%;
+    flex-wrap: wrap; /* important! */
+}
+
+.card {
+    width: 350px; /* Fixed width to ensure 4 fit in a row */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+.wishlist-img {
+    width: 325px;
+    border-radius: 10px;
+    min-height: 490px;
+    object-fit: cover;
+}
+
+h5 {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+.color {
+    color: #777;
+}
+
+.more {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    background: rgb(0, 0, 0);
+    border: 1px solid black;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-top: 10px;
+    
+}
+
+.more:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* 2 per row at tablet */
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%; /* 1 per row on small screens */
+    }
+}
